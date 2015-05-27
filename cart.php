@@ -19,7 +19,7 @@ $products = @$_COOKIE['product'];?>
                 $id = $index + 1;
                 ?>
                 <tr class="active">
-                  <th scope="row"><?= $id;  ?></th>
+                  <th scope="row"></th>
                   <td><img src="<?= $product[3]; ?>" alt="" width="50px" height="50px"></td>
                   <td><h4><?= $product[0];  ?></h4></td>
                   <td><h4>R$ <?= $product[1]*$product[2];?> </h4></td>
@@ -28,11 +28,12 @@ $products = @$_COOKIE['product'];?>
 
                       <input type="hidden" name="products" value="<?= $products ?>">
                       <input type="hidden" name="id" value="<?= $index ?>">
-                      <button type="submit" class="btn btn-info" name="aumentar">+</button>
+                      <button type="submit" class="btn btn-info" name="increase">+</button>
                       <div class="col-md-3">
                         <input class="form-control" type="text" placeholder="<?= $product[2]; ?>" readonly>
                       </div>
-                      <button type="button" class="btn btn-danger">-</button> 
+                      <button type="button" class="btn btn-danger">-</button>
+
                     </form>
                   </td>
                 </tr>
@@ -43,8 +44,10 @@ $products = @$_COOKIE['product'];?>
         </div>
 
         <div class="row text-center">
-          <button class="btn btn-success btn-lg">Comprar produtos</button>
-          <button class="btn btn-danger btn-lg">Zerar Carrinho</button>
+          <form method="POST">
+          <button class="btn btn-success btn-lg" type="submit">Comprar produtos</button>
+          <button class="btn btn-danger btn-lg" type="submit" name="clear">Zerar Carrinho</button>
+          </form>
         </div>
 
         <?php require '_footer.php'; ?>
