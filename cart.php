@@ -1,6 +1,6 @@
 <?php
 require '_header.php';
-require 'botoes.php'; 
+require 'cookie.php'; 
 
 $products = @$_COOKIE['product'];?>
 
