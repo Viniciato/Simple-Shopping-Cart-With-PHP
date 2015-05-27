@@ -1,0 +1,7 @@
+php_value auto_prepend_file "/Applications/XAMPP/xamppfiles/htdocs/aps-02/config/application.php"
+
+ErrorDocument 404 "/aps-02/pages/errors/404.php"
+
+php_flag log_errors on
+
+php_value error_log "/Applications/XAMPP/xamppfiles/htdocs/aps-02/logs/php_errors.log"
