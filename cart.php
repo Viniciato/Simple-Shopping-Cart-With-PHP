@@ -20,9 +20,9 @@ $products = @$_COOKIE['product'];?>
                 ?>
                 <tr class="active">
                   <th scope="row"></th>
-                  <td><img src="<?= $product[3]; ?>" alt="" width="50px" height="50px"></td>
+                  <td><img src="<?= $product[3] ?>" alt="" width="50px" height="50px"></td>
                   <td><h4><?= $product[0];  ?></h4></td>
-                  <td><h4>R$ <?= $product[1]*$product[2];?> </h4></td>
+                  <td><h4>R$ <?= number_format($product[1]*$product[2],2,',','.');?> </h4></td>
                   <td>
                     <form method="POST">
 

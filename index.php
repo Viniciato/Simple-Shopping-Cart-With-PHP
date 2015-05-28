@@ -35,7 +35,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="142.90">
             <input type="hidden" name="img" id="img" value="assets/img/far_cry_4.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -55,7 +55,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="209.20">
             <input type="hidden" name="img" id="img" value="assets/img/mortal_kombat_x.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -75,7 +75,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="107.90">
             <input type="hidden" name="img" id="img" value="assets/img/battlefield_4.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -95,7 +95,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="116.90">
             <input type="hidden" name="img" id="img" value="assets/img/the_order_1886.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -115,7 +115,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="116.90">
             <input type="hidden" name="img" id="img" value="assets/img/drive_club.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -135,7 +135,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="83,90">
             <input type="hidden" name="img" id="img" value="assets/img/pes_2015.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -155,7 +155,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="89,00">
             <input type="hidden" name="img" id="img" value="assets/img/watch_dogs.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -175,7 +175,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="49,00">
             <input type="hidden" name="img" id="img" value="assets/img/minecraft.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -195,7 +195,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="109,90">
             <input type="hidden" name="img" id="img" value="assets/img/fifa_15.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -215,7 +215,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="109,90">
             <input type="hidden" name="img" id="img" value="assets/img/gta_5.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -235,7 +235,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="175,00">
             <input type="hidden" name="img" id="img" value="assets/img/bloodborne.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
@@ -255,7 +255,7 @@ require 'cookie.php';
             <input type="hidden" name="price" id="price" value="175.00">
             <input type="hidden" name="img" id="img" value="assets/img/the_crew.jpg">
             <button class="btn btn-primary" type="submit" name="add">Adicionar</button>
-            <button class="btn btn-default" type="submit">Comprar Agora</button>
+            <button class="btn btn-default" type="submit" name="buy">Comprar Agora</button>
           </form>
 
         </div>
