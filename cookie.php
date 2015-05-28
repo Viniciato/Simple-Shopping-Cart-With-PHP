@@ -10,13 +10,14 @@ if (isset($_POST['clear'])) {
 }
 
 function clear_cart(){
-  if (isset($_COOKIE['product'])) {
-    unset($_COOKIE);
-}
+  for ($i=0; $i < 12; $i++) { 
+    setcookie("product[$i]", "");
+  }
+  header("location:cart.php");
 }
 
 function set_product($id){
-  if (isset($_COOKIE['product'][$id])|| isset($_POST['increase'])) {
+  if (isset($_COOKIE['product'][$id])) {
     $product = explode('::', $_COOKIE['product'][$id]);
     $name = $product[0];
     $price = $product[1];
@@ -33,7 +34,9 @@ function set_product($id){
     $img = $_POST['img'];
     $id = $_POST['id'];
   }
+
   setCookie("product[{$id}]", $name.'::'.$price.'::'.$quantity.'::'.$img, time()+3600*24);
+
 }
 
 ?>

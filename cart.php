@@ -32,7 +32,7 @@ $products = @$_COOKIE['product'];?>
                       <div class="col-md-3">
                         <input class="form-control" type="text" placeholder="<?= $product[2]; ?>" readonly>
                       </div>
-                      <button type="button" class="btn btn-danger">-</button>
+                      <button type="submit" class="btn btn-danger" name="decrease">-</button>
 
                     </form>
                   </td>
@@ -45,8 +45,8 @@ $products = @$_COOKIE['product'];?>
 
         <div class="row text-center">
           <form method="POST">
-          <button class="btn btn-success btn-lg" type="submit">Comprar produtos</button>
-          <button class="btn btn-danger btn-lg" type="submit" name="clear">Zerar Carrinho</button>
+            <button class="btn btn-success btn-lg" type="submit">Comprar produtos</button>
+            <button class="btn btn-danger btn-lg" type="submit" name="clear">Zerar Carrinho</button>
           </form>
         </div>
 
