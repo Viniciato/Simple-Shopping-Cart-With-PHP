@@ -26,7 +26,7 @@
     <?php if (isset($_SESSION['user'])): ?>
       <p class=" navbar-right"> <?= link_to('/pages/sessions/sign_out.php', include_span('lock') . ' Logout', ' class="navbar-brand"') ?></p>
       <p class=" navbar-right"> <?= link_to('/pages/statistics/', include_span('list-alt') . ' Relatórios', ' class="navbar-brand"') ?> </p>
-      <p class=" navbar-right"> <a class="navbar-brand" > Olá  <?= $_SESSION['user']['name'] ?> </a> </p>
+      <p class=" navbar-right"> <a class="navbar-brand"> Olá  <?= $_SESSION['user']['name'] ?> </a> </p>
     <?php else: ?>
       <p class=" navbar-right"> <?= link_to('/pages/sessions/new.php', include_span('lock') . ' Login ', ' class="navbar-brand"') ?> </p>
       <p class=" navbar-right"> <?= link_to('/cart.php', include_span('shopping-cart') . ' Carrinho ', ' class="navbar-brand"') ?> </p>

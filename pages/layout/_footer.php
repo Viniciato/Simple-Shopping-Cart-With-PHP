@@ -2,7 +2,7 @@
         <footer class="footer">
             <div class="row">
                 <div class="col-lg-22">
-                    <p>Aps 2 - Michael Vornes/Vinicius Nadin</p>
+                    <p class="text-center">Aps 2 - Michael Vornes/Vinicius Nadin</p>
                 </div>
             </div>
         </footer>

@@ -1,5 +1,12 @@
 <?php
 
+if (isset($_POST['closecart'])) {
+  clear_cart();
+  header("location:index.php");
+  }
+
+
+
 if (isset($_POST['add']) || isset($_POST['increase']) || isset($_POST['decrease']) || isset($_POST['buy'])) {
   $id = $_POST['id'];
   set_product($id);
@@ -21,11 +28,17 @@ function set_product($id){
     $product = explode('::', $_COOKIE['product'][$id]);
     $name = $product[0];
     $price = $product[1];
-    if (isset($_POST['increase']) || isset($_POST['buy'])) {
+    if (isset($_POST['increase']) || isset($_POST['buy']) || isset($_POST['add'])) {
       $quantity = $product[2] + 1;
     }
     elseif (isset($_POST['decrease'])) {
-      $quantity = $product[2] - 1;
+      if ($product[2] >= 2 ) {
+        $quantity = $product[2] - 1;
+      }
+      else
+      {
+        $quantity = $product[2];
+      }
     }
     $img = $product[3];
   }
@@ -39,9 +52,7 @@ function set_product($id){
   if (isset($_POST['increase']) || isset($_POST['decrease']) || isset($_POST['buy'])) {
     header('location:cart.php'); 
   }
-
   setCookie("product[{$id}]", $name.'::'.$price.'::'.$quantity.'::'.$img, time()+3600*24);
-
 }
 
 ?>

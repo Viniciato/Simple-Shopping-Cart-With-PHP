@@ -5,14 +5,6 @@ require 'cookie.php';
 
 <div class="container">
 
-  <header class="jumbotron hero-spacer">
-    <h1>NEXT-GEN</h1>
-    <p>Games e Acessórios</p>
-  </header>
-
-  <hr>
-
-
   <!-- Title -->
   <div class="row">
     <div class="col-lg-12">

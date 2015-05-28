@@ -20,7 +20,7 @@ $products = @$_COOKIE['product'];?>
                 ?>
                 <tr class="active">
                   <th scope="row"></th>
-                  <td><img src="<?= $product[3] ?>" alt="" width="50px" height="50px"></td>
+                  <td><img src="<?= $product[3] ?>" class="img-rounded" alt="" width="50px" height="50px"></td>
                   <td><h4><?= $product[0];  ?></h4></td>
                   <td><h4>R$ <?= number_format($product[1]*$product[2],2,',','.');?> </h4></td>
                   <td>
@@ -33,6 +33,7 @@ $products = @$_COOKIE['product'];?>
                         <input class="form-control" type="text" placeholder="<?= $product[2]; ?>" readonly>
                       </div>
                       <button type="submit" class="btn btn-danger" name="decrease">-</button>
+                      <button type="submit" class="btn btn-warning" name="delete">x</button>
 
                     </form>
                   </td>
@@ -45,7 +46,7 @@ $products = @$_COOKIE['product'];?>
 
         <div class="row text-center">
           <form method="POST">
-            <button class="btn btn-success btn-lg" type="submit">Comprar produtos</button>
+            <button class="btn btn-success btn-lg" type="submit" name="closecart">Comprar produtos</button>
             <button class="btn btn-danger btn-lg" type="submit" name="clear">Zerar Carrinho</button>
           </form>
         </div>
