@@ -2,7 +2,7 @@
 
 The readme in english of this project has not yet been developed.
 
-## Definição do Projeto //(Pt-Br)
+## Definição do Projeto // (Pt-Br)
 
 Projeto de desenvolvimento de um site de compras simples, usando apenas php, utilizando cookies
 para salvar os produtos no carrinho e usar arquivo para salvar os itens mais comprados, os itens

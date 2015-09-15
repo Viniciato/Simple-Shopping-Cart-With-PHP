@@ -5,8 +5,6 @@ if (isset($_POST['closecart'])) {
   header("location:index.php");
   }
 
-
-
 if (isset($_POST['add']) || isset($_POST['increase']) || isset($_POST['decrease']) || isset($_POST['buy'])) {
   $id = $_POST['id'];
   set_product($id);
